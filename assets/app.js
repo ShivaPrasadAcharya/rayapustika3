@@ -1,4 +1,4 @@
-/* rayapustika1 catalogue. All file names and remarks are rendered as text. */
+/* rayapustika3 catalogue. All file names and remarks are rendered as text. */
 (() => {
   'use strict';
   const $ = id => document.getElementById(id);
