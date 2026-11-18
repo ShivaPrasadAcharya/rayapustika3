@@ -9,6 +9,15 @@ window.RAYA_INDEX = {
       "size": 109030,
       "updatedAt": "2026-10-14T07:28:06.623424+00:00",
       "remarks": "test file"
+    },
+           {
+      "path": "",
+      "folder": "",
+      "name": "",
+      "extension": "",
+      "size": ,
+      "updatedAt": "",
+      "remarks": ""
     }
   ]
 };
