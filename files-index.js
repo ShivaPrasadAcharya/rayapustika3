@@ -8,7 +8,7 @@ window.RAYA_INDEX = {
       "extension": "png",
       "size": 109030,
       "updatedAt": "2026-10-14T07:28:06.623424+00:00",
-      "remarks": ""
+      "remarks": "test file"
     }
   ]
 };
