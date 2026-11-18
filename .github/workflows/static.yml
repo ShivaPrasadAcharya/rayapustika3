@@ -1,49 +1,15 @@
-# Simple workflow for deploying static content to GitHub Pages
-name: Deploy static content to Pages
+# Pages deployment is handled by pages.yml, which generates files-index.js first.
+name: Retired static Pages deployment
 
 on:
-  push:
-    branches: ["main"]
-
   workflow_dispatch:
 
 permissions:
-  contents: write
-  pages: write
-  id-token: write
-
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
+  contents: read
 
 jobs:
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-
+  notice:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Setup Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.x"
-
-      - name: Generate catalogue index
-        run: python3 scripts/build-index.py --site
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: "_site"
-
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v5
+      - name: Explain active workflow
+        run: echo "Use Publish rayapustika3; it generates files-index.js before deployment."
